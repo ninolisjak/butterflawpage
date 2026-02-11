@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+/* ============================================
+   Butterflaw Coach — Dreamy Beauty Theme
+   ============================================ */
+
+@theme {
+  --color-primary: #C17ADB;
+  --color-primary-light: #D9A4EE;
+  --color-primary-dark: #9B4FBF;
+  --color-secondary: #E879A5;
+  --color-accent: #F0B0D0;
+  --color-success: #8BD8B0;
+  --color-warning: #F5C28A;
+  --color-danger: #EF7070;
+  --color-bg: #F3EAF7;
+  --color-bg-card: rgba(255, 255, 255, 0.55);
+  --color-bg-dark: #1A1020;
+  --color-text: #3E2456;
+  --color-text-muted: #8B6FA0;
+  --color-border: #D8C4E8;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+/* Base resets */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: linear-gradient(160deg, #EDE0F5 0%, #F3E8F9 25%, #FCE4F0 50%, #E8DCF5 75%, #F0E0FA 100%);
+  background-attachment: fixed;
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Safe area insets for mobile */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+/* ---- Dreamy card gradient backgrounds ---- */
+.dreamy-card {
+  background: linear-gradient(135deg, rgba(220, 190, 255, 0.35) 0%, rgba(245, 200, 230, 0.3) 50%, rgba(200, 175, 255, 0.25) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 170, 240, 0.4);
+}
+
+.dreamy-card-solid {
+  background: linear-gradient(135deg, #E5D4F5 0%, #F5DAE8 50%, #DDD0F5 100%);
+  border: 1.5px solid rgba(180, 140, 220, 0.5);
+}
+
+.dreamy-hero {
+  background: linear-gradient(135deg, #E0C8F5 0%, #F5D0E5 40%, #D8C0F5 70%, #EED0F0 100%);
+  border: 1.5px solid rgba(190, 150, 230, 0.4);
+}
+
+/* ---- Sparkle decoration ---- */
+.sparkle::before,
+.sparkle::after {
+  content: '✦';
+  position: absolute;
+  color: rgba(180, 140, 240, 0.5);
+  font-size: 10px;
+  animation: sparkle-twinkle 2s ease-in-out infinite;
+}
+.sparkle::before {
+  top: 8px;
+  right: 12px;
+  animation-delay: 0s;
+}
+.sparkle::after {
+  bottom: 10px;
+  left: 14px;
+  font-size: 8px;
+  animation-delay: 1s;
+}
+
+@keyframes sparkle-twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* ---- Animations ---- */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(100%); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes confetti {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-60px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.25s ease-out forwards;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+.animate-confetti {
+  animation: confetti 0.6s ease-out forwards;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Staggered animations for lists */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.25s; }
+
+/* Splash screen animations */
+@keyframes splash-logo {
+  0% { opacity: 0; transform: scale(0.6); }
+  60% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes splash-text {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce-dot {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-splash-logo {
+  animation: splash-logo 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-splash-text {
+  opacity: 0;
+  animation: splash-text 0.4s ease-out 0.3s forwards;
+}
+
+.animate-splash-text-delay {
+  opacity: 0;
+  animation: splash-text 0.4s ease-out 0.5s forwards;
+}
+
+.animate-bounce-dot {
+  animation: bounce-dot 0.6s ease-in-out infinite;
+}
+
+/* Celebration confetti burst */
+@keyframes float-up {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-100px) scale(0.5); }
+}
+
+.animate-float-up {
+  animation: float-up 1.5s ease-out forwards;
+}
+

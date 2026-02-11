@@ -1,0 +1,113 @@
+{
+  "common": {
+    "appName": "Butterflaw Coach",
+    "next": "Next",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel",
+    "done": "Done",
+    "skip": "Skip",
+    "close": "Close",
+    "loading": "Loading…",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "streak": "Streak",
+    "days": "days",
+    "day": "day",
+    "minutes": "min",
+    "seconds": "sec"
+  },
+  "onboarding": {
+    "welcome": "Welcome to Butterflaw",
+    "subtitle": "Your personal coach for self-care & wellbeing",
+    "chooseGoals": "What do you want to improve?",
+    "chooseGoalsSub": "Choose one or more goals",
+    "chooseLevel": "Your current level?",
+    "beginner": "Beginner",
+    "beginnerDesc": "Just starting out, teach me the basics",
+    "intermediate": "Intermediate",
+    "intermediateDesc": "I know the basics, want to improve",
+    "advanced": "Advanced",
+    "advancedDesc": "Experienced, give me pro tips",
+    "chooseDuration": "How much time per day?",
+    "duration5": "5 min — Quick ritual",
+    "duration10": "10 min — Balanced",
+    "duration15": "15 min — Deep dive",
+    "reminder": "Reminder",
+    "reminderDesc": "When should we remind you?",
+    "letsGo": "Let's go! 🦋",
+    "almostDone": "Almost there!"
+  },
+  "home": {
+    "greeting": "Hey! 👋",
+    "yourDay": "Your day",
+    "allDone": "All done! 🎉",
+    "allDoneMsg": "Great job! You completed all tasks.",
+    "tasksLeft": "{{count}} tasks left",
+    "habit": "Habit",
+    "lesson": "Lesson",
+    "checkin": "Check-in",
+    "markDone": "Done ✓",
+    "undo": "Undo"
+  },
+  "progress": {
+    "title": "Progress",
+    "currentStreak": "Current streak",
+    "bestStreak": "Best streak",
+    "thisWeek": "This week",
+    "completionRate": "Completion rate",
+    "noData": "No data yet — start today!"
+  },
+  "programs": {
+    "title": "Programs",
+    "subtitle": "Structured programs for your goals",
+    "join": "Join",
+    "leave": "Leave",
+    "active": "Active",
+    "completed": "Completed",
+    "days": "{{count}} days",
+    "habits": "{{count}} habits",
+    "lessons": "{{count}} lessons"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "goals": "Goals",
+    "level": "Level",
+    "duration": "Duration",
+    "language": "Language",
+    "reminder": "Reminder",
+    "reminderTime": "Reminder time",
+    "about": "About",
+    "version": "Version",
+    "resetData": "Reset data",
+    "resetConfirm": "Are you sure? All data will be erased.",
+    "slovenian": "Slovenščina",
+    "english": "English"
+  },
+  "checkin": {
+    "title": "Daily check-in",
+    "question": "How are you feeling today?",
+    "great": "Great",
+    "good": "Good",
+    "okay": "Okay",
+    "notGreat": "Not great",
+    "bad": "Bad",
+    "submit": "Submit"
+  },
+  "lesson": {
+    "readTime": "~{{seconds}} sec read",
+    "completed": "Lesson completed!",
+    "markRead": "Mark as read"
+  },
+  "goals": {
+    "skin": "Skin",
+    "hair": "Hair",
+    "posture": "Posture",
+    "style": "Style",
+    "energy": "Energy"
+  }
+}

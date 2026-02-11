@@ -1,0 +1,113 @@
+{
+  "common": {
+    "appName": "Butterflaw Coach",
+    "next": "Naprej",
+    "back": "Nazaj",
+    "save": "Shrani",
+    "cancel": "Prekliči",
+    "done": "Končano",
+    "skip": "Preskoči",
+    "close": "Zapri",
+    "loading": "Nalaganje…",
+    "yes": "Da",
+    "no": "Ne",
+    "ok": "V redu",
+    "today": "Danes",
+    "yesterday": "Včeraj",
+    "streak": "Niz",
+    "days": "dni",
+    "day": "dan",
+    "minutes": "min",
+    "seconds": "sek"
+  },
+  "onboarding": {
+    "welcome": "Dobrodošli v Butterflaw",
+    "subtitle": "Vaš osebni coach za nego in dobro počutje",
+    "chooseGoals": "Kaj želite izboljšati?",
+    "chooseGoalsSub": "Izberite enega ali več ciljev",
+    "chooseLevel": "Vaša trenutna raven?",
+    "beginner": "Začetnik",
+    "beginnerDesc": "Šele začenjam, naučite me osnov",
+    "intermediate": "Vmesna raven",
+    "intermediateDesc": "Poznam osnove, želim se izboljšati",
+    "advanced": "Napredna raven",
+    "advancedDesc": "Sem izkušen/a, želim vrhunske nasvete",
+    "chooseDuration": "Koliko časa na dan?",
+    "duration5": "5 min — Hitri ritual",
+    "duration10": "10 min — Uravnoteženo",
+    "duration15": "15 min — Poglobljeno",
+    "reminder": "Opomnik",
+    "reminderDesc": "Kdaj vas naj spomnimo?",
+    "letsGo": "Začnimo! 🦋",
+    "almostDone": "Skoraj gotovo!"
+  },
+  "home": {
+    "greeting": "Živjo! 👋",
+    "yourDay": "Tvoj dan",
+    "allDone": "Vse opravljeno! 🎉",
+    "allDoneMsg": "Bravo! Si opravil/a vse naloge.",
+    "tasksLeft": "{{count}} nalog še čaka",
+    "habit": "Navada",
+    "lesson": "Lekcija",
+    "checkin": "Prijava",
+    "markDone": "Opravljeno ✓",
+    "undo": "Razveljavi"
+  },
+  "progress": {
+    "title": "Napredek",
+    "currentStreak": "Trenutni niz",
+    "bestStreak": "Najboljši niz",
+    "thisWeek": "Ta teden",
+    "completionRate": "Stopnja dokončanja",
+    "noData": "Še ni podatkov — začnite danes!"
+  },
+  "programs": {
+    "title": "Programi",
+    "subtitle": "Strukturirani programi za vaše cilje",
+    "join": "Pridruži se",
+    "leave": "Zapusti",
+    "active": "Aktivno",
+    "completed": "Zaključeno",
+    "days": "{{count}} dni",
+    "habits": "{{count}} navad",
+    "lessons": "{{count}} lekcij"
+  },
+  "settings": {
+    "title": "Nastavitve",
+    "profile": "Profil",
+    "goals": "Cilji",
+    "level": "Raven",
+    "duration": "Trajanje",
+    "language": "Jezik",
+    "reminder": "Opomnik",
+    "reminderTime": "Čas opomnika",
+    "about": "O aplikaciji",
+    "version": "Različica",
+    "resetData": "Ponastavi podatke",
+    "resetConfirm": "Ali ste prepričani? Vsi podatki bodo izbrisani.",
+    "slovenian": "Slovenščina",
+    "english": "English"
+  },
+  "checkin": {
+    "title": "Dnevna prijava",
+    "question": "Kako se počutite danes?",
+    "great": "Odlično",
+    "good": "Dobro",
+    "okay": "V redu",
+    "notGreat": "Ni najboljše",
+    "bad": "Slabo",
+    "submit": "Oddaj"
+  },
+  "lesson": {
+    "readTime": "~{{seconds}} sek branja",
+    "completed": "Lekcija zaključena!",
+    "markRead": "Označite kot prebrano"
+  },
+  "goals": {
+    "skin": "Koža",
+    "hair": "Lasje",
+    "posture": "Drža",
+    "style": "Stil",
+    "energy": "Energija"
+  }
+}
